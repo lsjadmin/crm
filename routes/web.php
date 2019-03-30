@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//首页
+Route::get('/','LookeController@show');
+//登陆
+Route::get('looke/index','LookeController@index');
+
+Route::post('looke/code','LookeController@code');
+Route::post('looke/email','LookeController@email');
